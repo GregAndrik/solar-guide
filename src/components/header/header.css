@@ -1,0 +1,109 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header__container {
+    text-align: center; 
+    position: relative;
+}
+
+.sun {
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    /* puts "sun" image on center */
+    left: calc(50% - 11rem);
+    /* creating 4 rem distance from the top */
+    margin-top: 4rem;
+    overflow: hidden;
+    /* moving sun 5rem from top and 1.5 from the other sides to the center */
+    padding: 5rem 1.5rem 1.5rem 1.5rem; 
+}
+
+/* =========================== MEDIA QUERIES (MEDIUM DEVICES) =========================== */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+}
+
+/* =========================== MEDIA QUERIES (SMALL DEVICES) ============================ */
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .sun {
+        width: var(--container-width-sm);
+        left: calc(50% - 9.8rem);
+    }
+}
+
+/* ========================= MEDIA QUERIES (ULTRA SMALL DEVICES) ========================= */
+@media screen and (max-width: 550px) {
+    .sun {
+        width: var(--container-width-md);
+        left: calc(50% - 13rem);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .sun {
+        width: var(--container-width-md);
+        left: calc(50% - 10rem);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        height: 110vh;
+    }
+
+    .sun {
+        width: var(--container-width-sm);
+        left: calc(50% - 9.7rem);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        height: 110vh;
+    }
+
+    .sun {
+        width: var(--container-width-sm);
+        left: calc(50% - 9rem);
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container.header__container {
+        left: calc(50% - 7rem);
+    }
+    .sun {
+        width: var(--container-width-sm);
+        left: calc(50% - 7rem);
+    }
+}
+
+/* ============================== MEDIA QUERIES (HEIGHT) ================================= */
+@media screen and (max-height: 500px) {
+    header {
+        height: 180vh;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    header {
+        padding-bottom: 40rem;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    header {
+        height: 100vh;
+    }
+}
